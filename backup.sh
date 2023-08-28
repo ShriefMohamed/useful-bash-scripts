@@ -18,7 +18,7 @@ cp /etc/httpd/conf/httpd.conf "$backup_dir"
 cp /etc/httpd/conf/extra/httpd-vhosts.conf "$backup_dir"
 cp /etc/hosts "$backup_dir"
 
-mysqldump -u root -proot --all-databases > "$backup_dir/alldb.sql"
+mariadb-dump -u root -proot --all-databases > "$backup_dir/alldb.sql"
 
 echo "All done :-)"
 

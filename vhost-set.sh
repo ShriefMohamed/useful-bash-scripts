@@ -11,7 +11,7 @@ fi
 
 echo "<VirtualHost *:80>
     ServerAdmin webmaster@dummy-host2.example.com
-    DocumentRoot "/srv/http/$project_name/public_html/"
+    DocumentRoot "/srv/http/$project_name/public/"
     ServerName www.$project_name.local
 </VirtualHost>" >> /etc/httpd/conf/extra/httpd-vhosts.conf
 
